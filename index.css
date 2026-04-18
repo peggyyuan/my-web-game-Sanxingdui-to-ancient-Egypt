@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-ancient: "Cinzel", serif;
+  
+  --color-bg-dark: #0f0e0c;
+  --color-panel-bg: #1a1814;
+  --color-accent-bronze: #cd7f32;
+  --color-accent-gold: #d4af37;
+  --color-accent-egypt-blue: #1034a6;
+  --color-text-primary: #e4e3e0;
+  --color-text-secondary: #a09e9a;
+  --color-border-main: #3d3a33;
+}
+
+body {
+  @apply bg-bg-dark text-text-primary antialiased overflow-hidden;
+  font-family: var(--font-sans);
+}
+
+.dark-gradient {
+  background: radial-gradient(circle at center, #2a2620 0%, #0f0e0c 100%);
+}
+
+.panel-overlay {
+  background: var(--color-panel-bg);
+  border: 1px solid var(--color-border-main);
+}
+
+.stat-glow {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.market-price-tag {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--color-border-main);
+}
